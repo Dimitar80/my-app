@@ -1,4 +1,19 @@
 .text {
+    background-color: aqua;
     color: blue;
     font-weight: 700;
+}
+
+.art {
+    background-color: yellowgreen;
+    display: flex;
+    width: 50%;
+    /* align-content: center; */
+    /* align-items: center; */
+    margin: auto;
+    justify-content: center;
+    justify-items: center; 
+    text-align: center;
+    color: red;
+    font-weight: 900;
 }
