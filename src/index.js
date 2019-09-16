@@ -13,9 +13,10 @@ const app = document.getElementById('app')
 // const name = 'Dimitar Pavlov'
 // const element = <h1>Hi, I am {name}</h1>;
 
-const bcg = document.getElementsByTagName('body')
-bcg.style.backgroundColor = 'yellow'
-document.body.appendChild('bcg');
+// const bcg = document.getElementsByTagName('body');
+// bcg.style.backgroundColor = 'yellow'
+// document.body.addStyle('bcg');
+document.body.style.backgroundColor = "pink";
 
 const btn = document.createElement('button');  
 btn.innerHTML = 'Click Me';                    
@@ -27,7 +28,13 @@ btn.style.display = 'flex';
 btn.style.textAlign = 'center';  //?//
 btn.style.margin = 'auto';
 
-document.body.appendChild(btn);       
+document.body.appendChild(btn); 
+
+var element = document.getElementById("btnbcg");
+element.style.backgroundColor = 'lightgreen'
+element.style.width = '50%'
+element.style.margin = 'auto';
+element.appendChild(btn);
        
 // const btnput = document.getElementById('btn')
 
