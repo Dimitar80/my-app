@@ -1,16 +1,49 @@
 // alert('Hello World!')
-
 // console.log("Test")
-
-import ReactDOM from 'react-dom'
 import React from 'react'
+import ReactDOM from 'react-dom'
 import User from './User'
 import Heading from './Heading'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+import Article from './Article'
+import Form from './Form'
 
 
 const app = document.getElementById('app')
 
+// const name = 'Dimitar Pavlov'
+// const element = <h1>Hi, I am {name}</h1>;
+
+// const bcg = document.getElementsByTagName('body');
+// bcg.style.backgroundColor = 'yellow'
+// document.body.addStyle('bcg');
+document.body.style.backgroundColor = "pink";
+
+const btn = document.createElement('button');  
+btn.innerHTML = 'Click Me';                    
+btn.style.color = 'black';  
+btn.style.fontWeight='700'                     
+btn.style.width = '210px';                     
+btn.style.height = '30px';  
+btn.style.display = 'flex'; 
+btn.style.textAlign = 'center';  //?//
+btn.style.margin = 'auto';
+
+document.body.appendChild(btn); 
+
+var element = document.getElementById("btnbcg");
+element.style.backgroundColor = 'lightgreen'
+element.style.width = '50%'
+element.style.margin = 'auto';
+element.appendChild(btn);
+       
+// const btnput = document.getElementById('btn')
+
+
+
+
+
+// CLASS //
 const Menu = () => {
     return (
         <ul>
@@ -71,8 +104,15 @@ const Routes = () => {
        path='/user' 
        render={(props) => 
         <React.Fragment>
+<<<<<<< HEAD
                 <Heading  />
                  <User  />
+=======
+         <Heading />
+         <User />
+         <Article />
+         <Form/>
+>>>>>>> f7c285c9ac2a077d34ed6831682617c66d68431b
         </React.Fragment>
        }
         /> 
@@ -80,6 +120,7 @@ const Routes = () => {
     </Router>
     )
 }
+<<<<<<< HEAD
 
 
 // const Container = () => {
@@ -92,6 +133,37 @@ const Routes = () => {
 // }
 
 ReactDOM.render(<Routes/>, app)
+=======
+>>>>>>> f7c285c9ac2a077d34ed6831682617c66d68431b
 
+ReactDOM.render(<Container/>, app);
+
+
+// PROBA START //
+// (function sayHello() {
+//     alert("hello DP!");
+// })();
+
+//  function sayHello() {
+//     alert("hello DP!");
+//  };
+//   sayHello();
+
+// class Rectangle {
+//     constructor(height, width) {
+//       this.height = height;
+//       this.width = width;
+//     }
+//   }
+//   alert(Rectangle);
+
+// let Rectangle = class Rectangle2 {
+//     constructor(height, width) {
+//       this.height = height;
+//       this.width = width;
+//     }
+//   };
+//   alert(Rectangle.name);
+  // PROBA END //
 
 

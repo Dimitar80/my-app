@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 
-// CLASS //
+// Function //
 const User = () => {
     return (
        <React.Fragment>
