@@ -103,16 +103,11 @@ const Routes = () => {
        exact 
        path='/user' 
        render={(props) => 
-        <React.Fragment>
-<<<<<<< HEAD
-                <Heading  />
-                 <User  />
-=======
-         <Heading />
-         <User />
-         <Article />
-         <Form/>
->>>>>>> f7c285c9ac2a077d34ed6831682617c66d68431b
+        <React.Fragment>   
+            <Heading />
+            <User />
+            <Article />
+            <Form/>
         </React.Fragment>
        }
         /> 
@@ -120,7 +115,6 @@ const Routes = () => {
     </Router>
     )
 }
-<<<<<<< HEAD
 
 
 // const Container = () => {
@@ -133,10 +127,7 @@ const Routes = () => {
 // }
 
 ReactDOM.render(<Routes/>, app)
-=======
->>>>>>> f7c285c9ac2a077d34ed6831682617c66d68431b
 
-ReactDOM.render(<Container/>, app);
 
 
 // PROBA START //
