@@ -12,6 +12,7 @@ module.exports = {
         contentBase: path.join(__dirname, 'src'),
         compress: true,
         port: 8080,
+        historyApiFallback: true
         // publicPath: '/src/'
     },
     module: {
@@ -19,9 +20,8 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader"
-                }
+                use: ["babel-loader", "source-map-loader"]
+                
             },
             {
                 test: /\.css$/i,
