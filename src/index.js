@@ -13,14 +13,22 @@ const app = document.getElementById('app')
 // const name = 'Dimitar Pavlov'
 // const element = <h1>Hi, I am {name}</h1>;
 
-// const btn = document.createElement('button');  
-// btn.innerHTML = 'Click Me';                    
-// btn.style.color = 'black';  
-// btn.style.fontWeight='700'                     
-// btn.style.width = '200px';                     
-// btn.style.height = '30px';  
-// btn.style.display = 'flex';   
-// document.body.appendChild(btn);               
+const bcg = document.getElementsByTagName('body')
+bcg.style.backgroundColor = 'yellow'
+document.body.appendChild('bcg');
+
+const btn = document.createElement('button');  
+btn.innerHTML = 'Click Me';                    
+btn.style.color = 'black';  
+btn.style.fontWeight='700'                     
+btn.style.width = '210px';                     
+btn.style.height = '30px';  
+btn.style.display = 'flex'; 
+btn.style.textAlign = 'center';  //?//
+btn.style.margin = 'auto';
+
+document.body.appendChild(btn);       
+       
 // const btnput = document.getElementById('btn')
 
 
