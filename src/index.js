@@ -4,6 +4,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import User from './User'
 import Heading from './Heading'
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import Article from './Article'
 import Form from './Form'
 
@@ -43,18 +44,90 @@ element.appendChild(btn);
 
 
 // CLASS //
-const Container = () => {
+const Menu = () => {
     return (
-        <React.Fragment>
-         <Heading />
-         <User />
-         <Article />
-         <Form/>
-        </React.Fragment>
+        <ul>
+            <li>
+                <Link to='/'>Home</Link>
+            </li>
+            <li>
+                <Link to='/about'>About us</Link>
+            </li>
+            <li>
+                <Link to='/contact'>Contact us</Link>
+            </li>
+            <li>
+                <Link to='/login'>Log in</Link>
+            </li>
+            <li>
+                <Link to='/user'>User</Link>
+            </li>
+        </ul>
     )
 }
 
-ReactDOM.render(<Container/>, app);
+const Home = () => {
+    return (
+        <h1>Welcome to my home page!</h1>  // Poseben file //
+    )
+}
+
+const About = () => {
+    return (
+        <h1>Welcome to my about page!</h1> // Poseben file //
+    )
+}
+
+const Contact = () => {
+    return (
+        <h1>Welcome to my contact page!</h1> // Poseben file //
+    )
+}
+
+const Login = () => {
+    return (
+        <h1>Welcome to my login page!</h1> // Poseben file //
+    )
+}
+
+const Routes = () => {
+    return (
+    <Router>
+    <Menu />
+    <Switch>
+       <Route  exact path='/' component={Home}/> 
+       <Route  exact path='/about' component={About}/> 
+       <Route  exact path='/contact' component={Contact}/> 
+       <Route  exact path='/login' component={Login}/> 
+       <Route  
+       exact 
+       path='/user' 
+       render={(props) => 
+        <React.Fragment>   
+            <Heading />
+            <User />
+            <Article />
+            <Form/>
+        </React.Fragment>
+       }
+        /> 
+    </Switch>
+    </Router>
+    )
+}
+
+
+// const Container = () => {
+//     return (
+//         <React.Fragment>
+//         <Heading />
+//         <User />
+//         </React.Fragment>
+//     )
+// }
+
+ReactDOM.render(<Routes/>, app)
+
 
 
 // PROBA START //
