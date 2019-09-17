@@ -1,46 +1,21 @@
-// alert('Hello World!')
-// console.log("Test")
 import React from 'react'
 import ReactDOM from 'react-dom'
 import User from './User'
 import Heading from './Heading'
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import Article from './Article'
 import Form from './Form'
+// import Menu from './Menu'
+import Home from './Home'
+import About from './About'
+import Contact from './Contact'
+import Login from './Login'
+
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
 
 const app = document.getElementById('app')
 
-// const name = 'Dimitar Pavlov'
-// const element = <h1>Hi, I am {name}</h1>;
-
-// const bcg = document.getElementsByTagName('body');
-// bcg.style.backgroundColor = 'yellow'
-// document.body.addStyle('bcg');
-document.body.style.backgroundColor = "pink";
-
-const btn = document.createElement('button');  
-btn.innerHTML = 'Click Me';                    
-btn.style.color = 'black';  
-btn.style.fontWeight='700'                     
-btn.style.width = '210px';                     
-btn.style.height = '30px';  
-btn.style.display = 'flex'; 
-btn.style.textAlign = 'center';  //?//
-btn.style.margin = 'auto';
-
-document.body.appendChild(btn); 
-
-var element = document.getElementById("btnbcg");
-element.style.backgroundColor = 'lightgreen'
-element.style.width = '50%'
-element.style.margin = 'auto';
-element.appendChild(btn);
-       
-// const btnput = document.getElementById('btn')
-
-
-
+document.body.style.backgroundColor = "lightblue";
 
 
 // CLASS //
@@ -48,7 +23,7 @@ const Menu = () => {
     return (
         <ul>
             <li>
-                <Link to='/'>Home</Link>
+                <Link to='/home'>Home</Link>
             </li>
             <li>
                 <Link to='/about'>About us</Link>
@@ -66,36 +41,36 @@ const Menu = () => {
     )
 }
 
-const Home = () => {
-    return (
-        <h1>Welcome to my home page!</h1>  // Poseben file //
-    )
-}
+// const Home = () => {
+//     return (
+//         <h1>Welcome to my home page!</h1>  // Poseben file //
+//     )
+// }
 
-const About = () => {
-    return (
-        <h1>Welcome to my about page!</h1> // Poseben file //
-    )
-}
+// const About = () => {
+//     return (
+//         <h1>Welcome to my about page!</h1> // Poseben file //
+//     )
+// }
 
-const Contact = () => {
-    return (
-        <h1>Welcome to my contact page!</h1> // Poseben file //
-    )
-}
+// const Contact = () => {
+//     return (
+//         <h1>Welcome to my contact page!</h1> // Poseben file //
+//     )
+// }
 
-const Login = () => {
-    return (
-        <h1>Welcome to my login page!</h1> // Poseben file //
-    )
-}
+// const Login = () => {
+//     return (
+//         <h1>Welcome to my login page!</h1> // Poseben file //
+//     )
+// }
 
 const Routes = () => {
     return (
     <Router>
     <Menu />
     <Switch>
-       <Route  exact path='/' component={Home}/> 
+       <Route  exact path='/home' component={Home}/> 
        <Route  exact path='/about' component={About}/> 
        <Route  exact path='/contact' component={Contact}/> 
        <Route  exact path='/login' component={Login}/> 
