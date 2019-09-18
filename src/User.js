@@ -6,7 +6,7 @@ const User = () => {
     return (
        <React.Fragment>
         <div id='greeting' className='text'>Hello Dimitar Pavlov!</div>
-        <div>This is my first app</div>
+        <div className='a'>This is my first app</div>
        </React.Fragment> 
     )
 }

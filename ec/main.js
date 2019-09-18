@@ -1,7 +1,6 @@
-// import React from 'react'
-// import ReactDOM from 'react-dom'
-
-// import User from './User'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Login from './log-in'
 // import Heading from './Heading'
 
 // import Home from './Home'
@@ -9,12 +8,23 @@
 // import Contact from './Contact'
 // import Login from './Login'
 
-// import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+// import { BrowserRouter as Router, Route, Link, Switch } from './node_modules/react-router-dom'
+
+console.log('Hellooooooo');
+
+const app = document.getElementById('log')
+
+document.body.style.backgroundColor = "lightblue";
 
 
-// const app = document.getElementById('app')
 
-// document.body.style.backgroundColor = "lightblue";
+const Logcon = () => {
+    return (
+        <Login/>
+    )
+}
+
+ReactDOM.render(<Logcon/>, app)
 
 
 // CLASS //
