@@ -1,15 +1,15 @@
 const path = require('path');
 
 module.exports = {
-    entry: './ec/main.js',
+    entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'ec'),
+        path: path.resolve(__dirname, 'src'),
         filename: 'bundle.js',
         // publicPath: '/src/'
     },
 
     devServer: {
-        contentBase: path.join(__dirname, 'ec'),
+        contentBase: path.join(__dirname, 'src'),
         compress: true,
         port: 8080,
         historyApiFallback: true

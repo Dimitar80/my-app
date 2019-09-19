@@ -1,44 +1,44 @@
-// import React from 'react'
-// import ReactDOM from 'react-dom'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-// import User from './User'
-// import Heading from './Heading'
+import User from './User'
+import Heading from './Heading'
 
-// import Home from './Home'
-// import About from './About'
-// import Contact from './Contact'
-// import Login from './Login'
+import Home from './Home'
+import About from './About'
+import Contact from './Contact'
+import Login from './Login'
 
-// import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
 
-// const app = document.getElementById('app')
+const app = document.getElementById('app')
 
-// document.body.style.backgroundColor = "lightblue";
+document.body.style.backgroundColor = "lightblue";
 
 
 // CLASS //
-// const Menu = () => {
-//     return (
-//         <ul>
-//             <li>
-//                 <Link to='/home'>Home</Link>
-//             </li>
-//             <li>
-//                 <Link to='/about'>About us</Link>
-//             </li>
-//             <li>
-//                 <Link to='/contact'>Contact us</Link>
-//             </li>
-//             <li>
-//                 <Link to='/login'>Log in</Link>
-//             </li>
-//             <li>
-//                 <Link to='/user'>User</Link>
-//             </li>
-//         </ul>
-//     )
-// }
+const Menu = () => {
+    return (
+        <ul>
+            <li>
+                <Link to='/home'>Home</Link>
+            </li>
+            <li>
+                <Link to='/about'>About us</Link>
+            </li>
+            <li>
+                <Link to='/contact'>Contact us</Link>
+            </li>
+            <li>
+                <Link to='/login'>Log in</Link>
+            </li>
+            <li>
+                <Link to='/user'>User</Link>
+            </li>
+        </ul>
+    )
+}
 
 // const Home = () => {
 //     return (
@@ -64,29 +64,29 @@
 //     )
 // }
 
-// const Routes = () => {
-//     return (
-//     <Router>
-//     <Menu />
-//     <Switch>
-//        <Route  exact path='/home' component={Home}/> 
-//        <Route  exact path='/about' component={About}/> 
-//        <Route  exact path='/contact' component={Contact}/> 
-//        <Route  exact path='/login' component={Login}/> 
-//        <Route  
-//        exact 
-//        path='/user' 
-//        render={(props) => 
-//         <React.Fragment>   
-//             <Heading />
-//             <User />
-//         </React.Fragment>
-//        }
-//         /> 
-//     </Switch>
-//     </Router>
-//     )
-// }
+const Routes = () => {
+    return (
+    <Router>
+    <Menu />
+    <Switch>
+       <Route  exact path='/home' component={Home}/> 
+       <Route  exact path='/about' component={About}/> 
+       <Route  exact path='/contact' component={Contact}/> 
+       <Route  exact path='/login' component={Login}/> 
+       <Route  
+       exact 
+       path='/user' 
+       render={(props) => 
+        <React.Fragment>   
+            <Heading />
+            <User />
+        </React.Fragment>
+       }
+        /> 
+    </Switch>
+    </Router>
+    )
+}
 
 
 // const Container = () => {
@@ -98,7 +98,7 @@
 //     )
 // }
 
-// ReactDOM.render(<Routes/>, app)
+ReactDOM.render(<Routes/>, app)
 
 
 
